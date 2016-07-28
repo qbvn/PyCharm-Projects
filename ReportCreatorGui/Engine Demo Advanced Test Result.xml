@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="TRML.xsl"?>
+<TestResults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="c565b99d-034b-4f8b-be8b-1bb21765fc13" xmlns="http://www.ieee.org/ATML/2007/TestResults">
+	<Personnel>
+		<SystemOperator ID="ITK\ulang" />
+	</Personnel>
+	<References>
+		<Reference uuid="c0a26e42-4126-44a4-a5c1-83508da7ef2b" name="Engine Demo Advanced">
+			<Text xmlns="http://www.ieee.org/ATML/2006/Common">C:\Users\Public\Documents\National Instruments\NI VeriStand 2014\Examples\Stimulus Profile\Engine Demo\Stimulus Profiles\Engine Demo Advanced\Engine Demo Advanced.nivsstimprof</Text>
+		</Reference>
+	</References>
+	<ResultSet ID="Test Result" name="C:\Users\Public\Documents\National Instruments\NI VeriStand 2014\Examples\Stimulus Profile\Engine Demo\Stimulus Profiles\Engine Demo Advanced\Test Results\UUT 1\Engine Demo Advanced Test Result.xml" startDateTime="2016-03-09T10:23:46.9528744+01:00" endDateTime="2016-03-09T10:24:30.0863415+01:00">
+		<Outcome value="Passed" />
+		<TestGroup ID="Setup" name="Setup" startDateTime="2016-03-09T10:23:46.9528744+01:00" endDateTime="2016-03-09T10:23:46.9528744+01:00">
+			<Outcome value="Passed" />
+			<Test ID="Setup/Open Workspace" name="Open Workspace" startDateTime="2016-03-09T10:23:46.9528744+01:00" endDateTime="2016-03-09T10:23:47.0188782+01:00">
+				<Outcome value="Passed" />
+			</Test>
+		</TestGroup>
+		<TestGroup ID="Main" name="Main" startDateTime="2016-03-09T10:23:47.0188782+01:00" endDateTime="2016-03-09T10:23:47.0188782+01:00">
+			<Outcome value="Passed" />
+			<Test ID="Main/Call RealTimeSequence: Engine Demo Advanced.nivsseq" name="Engine Demo Advanced" startDateTime="2016-03-09T10:23:47.0188782+01:00" endDateTime="2016-03-09T10:24:30.0823412+01:00">
+				<Parameters>
+					<Parameter ID="EnginePower">
+						<Data>
+							<Datum xsi:type="string" xmlns="http://www.ieee.org/ATML/2006/Common">
+								<Value>Aliases/EnginePower</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="DesiredRPM">
+						<Data>
+							<Datum xsi:type="string" xmlns="http://www.ieee.org/ATML/2006/Common">
+								<Value>Aliases/DesiredRPM</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="ActualRPM">
+						<Data>
+							<Datum xsi:type="string" xmlns="http://www.ieee.org/ATML/2006/Common">
+								<Value>Aliases/ActualRPM</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="EngineTemperature">
+						<Data>
+							<Datum xsi:type="string" xmlns="http://www.ieee.org/ATML/2006/Common">
+								<Value>Aliases/EngineTemp</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="Main/Call RealTimeSequence: Engine Demo Advanced.nivsseq.SequenceFile" name="Engine Demo Advanced">
+						<Reference uuid="c31490f2-8c5a-4e74-93a3-a96ce11adb51" name="Engine Demo Advanced">
+							<Text xmlns="http://www.ieee.org/ATML/2006/Common">C:\Users\Public\Documents\National Instruments\NI VeriStand 2014\Examples\Stimulus Profile\Engine Demo\Stimulus Profiles\Engine Demo Advanced\Engine Demo Advanced.nivsseq</Text>
+						</Reference>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+				<TestResult ID="Output">
+					<TestData>
+						<Datum xsi:type="string" xmlns="http://www.ieee.org/ATML/2006/Common">
+							<Value>&lt;Void&gt;</Value>
+						</Datum>
+					</TestData>
+				</TestResult>
+			</Test>
+		</TestGroup>
+		<Test ID="Clean Up" name="Clean Up" startDateTime="2016-03-09T10:24:30.0863415+01:00" endDateTime="2016-03-09T10:24:30.0863415+01:00">
+			<Outcome value="Passed" />
+		</Test>
+	</ResultSet>
+	<TestDescription>
+		<Definition version="1_0_0_0" xmlns="http://www.ieee.org/ATML/2006/Common">
+			<Description>This example demonstrates how to use multi-tasking in a real-time sequence.
+
+The real-time sequence simulates two engine warmup phases. The first warmup phase sets the desired RPM to 2500 and waits for 25 seconds. 
+The second warmup phase sets the desired RPM to 8000 and it also waits for 25 seconds before the engine turns off.
+
+During both warmup phases, a parallel task monitors the engine temperature so that the engine does not overheat. As soon as the engine temperature rises above a certain value, the currently-active warmup phase stops and the engine shuts down.</Description>
+			<Identification />
+		</Definition>
+	</TestDescription>
+	<UUT UutType="software">
+		<SerialNumber xmlns="http://www.ieee.org/ATML/2006/Common">UUT 1</SerialNumber>
+	</UUT>
+</TestResults>
