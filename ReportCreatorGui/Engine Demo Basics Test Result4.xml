@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="TRML.xsl"?>
+<TestResults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="2b221e0d-190e-4ceb-8edc-4eb869d16a3d" xmlns="urn:IEEE-1636.1:2013:TestResults">
+	<Personnel>
+		<SystemOperator ID="ITK\ulang" />
+	</Personnel>
+	<References>
+		<Reference uuid="b89af417-ddc2-4a70-b2a3-4e18c6a2dab7" name="Engine Demo Basics">
+			<Text xmlns="urn:IEEE-1671:2010:Common">C:\Users\Public\Documents\National Instruments\NI VeriStand 2015\Examples\Stimulus Profile\Engine Demo\Stimulus Profiles\Basic Engine Demo\Engine Demo Basics.nivsstimprof</Text>
+		</Reference>
+	</References>
+	<ResultSet endDateTime="2016-06-08T15:15:35.3258489+02:00" startDateTime="2016-06-08T15:15:02.4765643+02:00" name="C:\Users\Public\Documents\National Instruments\NI VeriStand 2015\Examples\Stimulus Profile\Engine Demo\Stimulus Profiles\Basic Engine Demo\Test Results\utut\Engine Demo Basics Test Result.xml" ID="Test Result">
+		<Outcome value="Failed" />
+		<TestGroup endDateTime="2016-06-08T15:15:02.4785645+02:00" startDateTime="2016-06-08T15:15:02.4785645+02:00" name="Setup" ID="Setup">
+			<Outcome value="Passed" />
+			<Test endDateTime="2016-06-08T15:15:02.4785645+02:00" startDateTime="2016-06-08T15:15:02.4785645+02:00" name="Launch NI VeriStand" ID="Setup/Launch NI VeriStand">
+				<Parameters>
+					<Parameter ID="Launch NI VeriStand">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>C:\Program Files (x86)\National Instruments\VeriStand 2015\NI VeriStand.exe </Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="Status">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>True</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+			</Test>
+			<Test endDateTime="2016-06-08T15:15:02.8916058+02:00" startDateTime="2016-06-08T15:15:02.4785645+02:00" name="Open VeriStand Project: Engine Demo.nivsproj" ID="Setup/Open VeriStand Project: Engine Demo.nivsproj">
+				<Outcome value="Passed" />
+			</Test>
+			<Test endDateTime="2016-06-08T15:15:11.8805046+02:00" startDateTime="2016-06-08T15:15:02.8916058+02:00" name="Run Active VeriStand Project" ID="Setup/Run Active VeriStand Project">
+				<Parameters>
+					<Parameter ID="Command">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>Run</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+			</Test>
+		</TestGroup>
+		<TestGroup endDateTime="2016-06-08T15:15:11.8815047+02:00" startDateTime="2016-06-08T15:15:11.8815047+02:00" name="Main" ID="Main">
+			<Outcome value="Failed" />
+			<Test endDateTime="2016-06-08T15:15:31.9715135+02:00" startDateTime="2016-06-08T15:15:11.884505+02:00" name="Engine Demo Basic" ID="Main/Call RealTimeSequence: Engine Demo Basic.nivsseq">
+				<Description>testrunbeschreibung</Description>
+				<Parameters>
+					<Parameter ID="EnginePower">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>Aliases/EnginePower</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="DesiredRPM">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>Aliases/DesiredRPM</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="Main/Call RealTimeSequence: Engine Demo Basic.nivsseq.SequenceFile" name="Engine Demo Basic">
+						<Reference uuid="d6c97c77-14ef-424b-8e23-4db4637a4d39" name="Engine Demo Basic">
+							<Text xmlns="urn:IEEE-1671:2010:Common">C:\Users\Public\Documents\National Instruments\NI VeriStand 2015\Examples\Stimulus Profile\Engine Demo\Stimulus Profiles\Basic Engine Demo\Engine Demo Basic.nivsseq</Text>
+						</Reference>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+				<TestResult ID="ID_47d75abd-79a7-42f0-b6b5-33636904c587" name="Output">
+					<TestData>
+						<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+							<Value>&lt;Void&gt;</Value>
+						</Datum>
+					</TestData>
+				</TestResult>
+			</Test>
+			<Test endDateTime="2016-06-08T15:15:31.9895153+02:00" startDateTime="2016-06-08T15:15:31.9795143+02:00" name="Undeploy Active VeriStand Project" ID="Main/Undeploy Active VeriStand Project">
+				<Parameters>
+					<Parameter ID="Command">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>Undeploy</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+			</Test>
+			<Test endDateTime="2016-06-08T15:15:34.2597423+02:00" startDateTime="2016-06-08T15:15:31.9895153+02:00" name="Run Active VeriStand Project" ID="Main/Run Active VeriStand Project">
+				<Parameters>
+					<Parameter ID="Command">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>Run</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Failed" qualifier="Error -307853 occurred at Project Window.lvlib:Project Window.vi &gt;&gt; Project Window.lvlib:Command Loop.vi &gt;&gt; NI_VS Workspace ExecutionAPI.lvlib:NI VeriStand - Connect to System.vi&#xD;&#xA;&#xD;&#xA;Possible reason(s):&#xA;&#xD;&#xA;NI VeriStand:  Das VeriStand Gateway konnte keine Verbindung zum Ziel herstellen. Stellen Sie sicher, dass das Zielsystem ausgeführt wird und die VeriStand Engine erfolgreich gestartet wurde. Wenn Sie dann immer noch keine Verbindung mit dem Zielsystem herstellen können, installieren Sie mit Hilfe des MAX die NI VeriStand Run-Time Engine erneut auf dem Zielsystem.&#xD;&#xA;=========================&#xD;&#xA;NI VeriStand:  Server TCP Interface.lvlib:TCP Connection Manager.vi:7430001&#xD;&#xA;&lt;append&gt;=========================&#xD;&#xA;NI VeriStand:  Error 63 occurred at TCP: Verbindung herstellen in Server TCP Interface.lvlib:TCP Connection Manager.vi:7430001&#xD;&#xA;&#xD;&#xA;Possible reason(s):&#xA;&#xD;&#xA;LabVIEW:  Empfangsbufferüberlauf am seriellen Anschluss.&#xA;=========================&#xA;LabVIEW:  Die Netzwerkverbindung wurde vom Server zurückgewiesen.&#xA;Target: localhost" />
+			</Test>
+		</TestGroup>
+		<TestGroup endDateTime="2016-06-08T15:15:34.2597423+02:00" startDateTime="2016-06-08T15:15:34.2597423+02:00" name="Clean Up" ID="Clean Up">
+			<Outcome value="Passed" />
+			<Test endDateTime="2016-06-08T15:15:34.2657429+02:00" startDateTime="2016-06-08T15:15:34.2597423+02:00" name="Undeploy Active VeriStand Project" ID="Clean Up/Undeploy Active VeriStand Project">
+				<Parameters>
+					<Parameter ID="Command">
+						<Data>
+							<Datum xsi:type="string" xmlns="urn:IEEE-1671:2010:Common">
+								<Value>Undeploy</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+			</Test>
+			<Test endDateTime="2016-06-08T15:15:35.3208484+02:00" startDateTime="2016-06-08T15:15:34.2657429+02:00" name="Close Active VeriStand Project" ID="Clean Up/Close Active VeriStand Project">
+				<Outcome value="Passed" />
+			</Test>
+		</TestGroup>
+	</ResultSet>
+	<TestDescription>
+		<Definition version="1_0_0_0" xmlns="urn:IEEE-1671:2010:Common">
+			<Description>This example demonstrates a basic introduction to the new Stimulus Profile Editor.
+
+The real-time sequence simulates two engine warmup phases. The first warmup phase sets the desired RPM to 2500 and waits for 25 seconds. 
+The second warmup phase sets the desired RPM to 8000 and it also waits for 25 seconds before the engine turns off.</Description>
+			<Identification>
+				<ModelName>_</ModelName>
+			</Identification>
+		</Definition>
+	</TestDescription>
+	<UUT>
+		<SerialNumber xmlns="urn:IEEE-1671:2010:Common">utut</SerialNumber>
+	</UUT>
+</TestResults>
